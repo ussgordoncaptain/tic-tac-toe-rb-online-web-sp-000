@@ -129,9 +129,9 @@ def winner(board)
   return value_won
 end 
 def play(board)
-  while(true)
+  while(over?(board)==false)
   turn(board)
-  if( over?(board))
+  if (won?(board))
     break
   end 
   end
