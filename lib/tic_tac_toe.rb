@@ -36,7 +36,8 @@ end
 def turn(board)
   
 while(true)
- puts(" please make a move 1-9")
+player=current_player[board]
+ puts(" please make a move 1-9 #{player}")
   move_selected= gets.chomp 
   move_index = input_to_index(move_selected) 
   if (valid_move?(board, move_index)== false)
