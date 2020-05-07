@@ -44,6 +44,7 @@ while(true)
   else 
     player= current_player(board)
     move(board,move_index,player)
+    display_board(board)
     break
   end
   end
